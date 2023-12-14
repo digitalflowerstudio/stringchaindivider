@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Chain Divider</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="headLine">String Chain Divider</h1>
+        <form class="dividerMachine">
+            <label for="inputString">Type in the string you want to divide!</label>
+            <input type="text" name="inputString" id="inputString">
+            <label for="inputDivide">Where do you want your string to be divided?</label>
+            <input type="text" name="inputDivide" id="inputDivide">
+            <div class="choice">
+                <input type="radio" name="radio" id="before" value="before">
+                <label for="before">Divide Before</label>
+                <input type="radio" name="radio" id="after" value="after">
+                <label for="after">Divide After</label>
+            </div>
+            <input onclick="divideString(); return false;" type="submit" name="submit" value="Use Magic!">
+        </form>
+        <div class="output">
+            <div id="outputFront"></div>
+            <div id="outputBack"></div>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
